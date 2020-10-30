@@ -1,0 +1,148 @@
+// main:../style.less
+
+.zagolovok {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 10rem 0rem;
+    margin-left: 10rem;
+    color: crimson;
+    font-family: @lobster;
+    text-shadow: 0px 5px 5px rgba(150, 0, 0, 0.4);
+
+    @media @iPad__pro {
+        margin-left: 6rem;
+    }
+
+    @media @Surface {
+        margin-top: 7rem;
+        margin-bottom: 0rem;
+    }
+
+    @media @Surface__V {
+        margin-left: 10rem;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+}
+
+.zagolovok h1 {
+    margin-top: 9rem;
+    font-size: 4rem;
+    margin-left: -1rem;
+
+    @media @Surface,
+    @Surface__V {
+        font-size: 3rem;
+        margin-top: 2.7rem;
+        margin-left: 0.2rem;
+    }
+    @media @iPhoneX{
+        font-size: 2rem;
+        margin-top: -8rem;
+        margin-left: 1rem;
+    }
+    @media @iPhone678{
+        font-size: 2rem;
+    }
+    @media @iPhone5SE{
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+}
+
+.tck {
+    font-size: 2.5rem;
+
+    @media @Surface,
+    @Surface__V {
+        font-size: 2rem;
+    }
+    @media @iPhoneX{
+        font-size: 1.5rem;
+    }
+    @media @iPhone678{
+        font-size: 1.8rem;
+    }
+    @media @iPhone5SE{
+        font-size: 1.4rem;
+    }
+
+}
+
+.first {
+    margin-right: -1.2rem;
+    height: 300px;
+
+    @media @Surface,
+    @Surface__V {
+        height: 150px;
+        margin-left: -3rem;
+    }
+    @media @iPhoneX{
+        height: 150px;
+        margin-left: -7rem;
+    }
+    @media @iPhone678{
+        height: 100px;
+        margin-left: -8rem;
+    }
+    @media @iPhone5SE{
+        height: 75px;
+        margin-left: -9rem;
+    }
+}
+
+.second {
+    margin-left: -3rem;
+    margin-top: 4.5rem;
+    height: 250px;
+
+    @media @iPhoneX_V {
+        display: none;
+    }
+    @media @Surface__V{
+        height: 125px;
+        margin-top: 2rem;
+        margin-left: -1rem;
+    }
+}
+
+.text {
+    text-align: justify;
+}
+
+.general__text {
+    margin: 5rem 0 5rem 0;
+    font-size: 3rem;
+    color: black;
+    font-family: @montserrat;
+    font-weight: 700;
+    line-height: 1.3;
+
+    @media @iPad__pro {
+        font-size: 2.7rem;
+    }
+
+    @media @Surface,
+    @Surface__V {
+        font-size: 1.8rem;
+    }
+    @media @iPhoneX{
+        font-size: 1.5rem;
+    }
+    @media @iPhone678 {
+        font-size: 1.6rem;
+    }
+    @media @iPhone5SE{
+        font-size: 1.4rem;
+    }
+}
+
+.g1 {
+    margin-left: 5rem;
+}
+
+.g2 {
+    margin-left: 5rem;
+}

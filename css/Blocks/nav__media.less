@@ -1,0 +1,193 @@
+// main:../style.less
+.nav__media {
+    display: none;
+    margin-top: -1.5rem;
+
+    @media @Burger {
+        display: block;
+    }
+}
+
+.logo__photo img {
+    @media @Surface {
+        display: none;
+    }
+}
+
+
+.logo__name {
+    @media @Surface {
+        font-size: 1.9rem;
+        margin-left: -7rem;
+        margin-top: 1.3rem;
+    }
+
+    @media @Surface__V {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    @media @iPhoneX {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    @media @iPhone678 {
+        font-size: 1.5rem;
+        margin-top: 1.4rem;
+    }
+
+    @media @iPhone5SE {
+        font-size: 1.1rem;
+        margin-top: 1.7rem;
+        text-shadow: 1px 0 0 rgba(150, 0, 0, 0.7);
+    }
+}
+
+.nav__bar__media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background-color: crimson;
+    border-radius: 50%;
+    position: relative;
+
+    @media @Surface,
+    @Surface__V {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    @media @iPhoneX {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    @media @iPhone5SE {
+        width: 3rem;
+        height: 3rem;
+    }
+
+
+}
+
+.burger span,
+.burger span:before,
+.burger span:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -1rem;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: #fff;
+}
+
+.burger span:before,
+.burger span:after {
+    content: "";
+    display: block;
+    transition: 0.2s;
+
+}
+
+.burger span:before {
+    transform: translateY(-5px);
+}
+
+.burger span:after {
+    transform: translateY(5px);
+}
+
+.burger_active span:before {
+    transform: rotate(35deg);
+    width: 1rem;
+    transform-origin: left bottom;
+}
+
+.burger_active span:after {
+    transform: rotate(-35deg);
+    width: 1rem;
+    transform-origin: left top;
+}
+
+.menu-block {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-nav__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-family: @montserrat;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-right: 2rem;
+
+    @media @Surface {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    @media @iPhoneX {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    @media @iPhone678 {
+        font-size: 1.2rem;
+        margin-right: 0.4rem;
+    }
+
+    @media @iPhone5SE {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.menu-nav {
+    background-color: crimson;
+    height: 5rem;
+    line-height: 5rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    margin-right: -2.5rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    transition: 0.5s;
+    transform-origin: right center;
+    transform: scaleX(0) translateX(0%);
+    opacity: 0;
+
+    @media @Surface,
+    @Surface__V {
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    @media @iPhoneX {
+        height: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    @media @iPhone5SE {
+        height: 3rem;
+        line-height: 3rem;
+    }
+}
+
+.menu-nav_active {
+    transform: scaleX(1) translateX(0%);
+    opacity: 1;
+}

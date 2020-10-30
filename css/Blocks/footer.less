@@ -1,0 +1,85 @@
+// main:../style.less
+.footer {
+    margin-top: 10rem;
+    background-color: #000;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__name {
+    font-family: @lobster;
+    margin-top: 4rem;
+    font-size: 2rem;
+    color: crimson;
+    text-transform: uppercase;
+    @media @iPad{
+      font-size: 1.5rem;
+    }
+    @media @Surface{
+      font-size: 1.3rem;
+    }
+    @media @iPhone678{
+        font-size: 1rem;
+        margin-top: 2.5rem;
+    }
+    @media @iPhone5SE{
+        font-size: 0.8rem;
+    }
+}
+
+
+.footer__link {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-family: @montserrat;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    transition: color .2s linear;
+
+    &:hover {
+        color: crimson;
+    }
+    @media @iPad{
+        font-size: 1.5rem;
+    }
+     @media @Surface{
+      font-size: 1.3rem;
+      margin-left: 1rem;
+    }
+     @media @iPhone678{
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+    @media @iPhone5SE{
+        font-size: 0.8rem;
+    }
+}
+
+.copy {
+    color: white;
+    margin-top: 8rem;
+    margin-left: 20rem;
+    font-family: @montserrat;
+    font-size: 1.5rem;
+    font-weight: 800;
+    @media @iPad{
+        font-size: 1rem;
+        margin-left: 15rem;
+    }
+     @media @Surface{
+      font-size: 0.8rem;
+      margin-left: 6rem;
+    }
+    @media @iPhone678{
+        margin-top: 5rem;
+        margin-left: 4rem;
+    }
+    @media @iPhone5SE{
+        font-size: 0.6rem;
+    }
+}

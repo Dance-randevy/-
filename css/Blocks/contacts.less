@@ -1,0 +1,91 @@
+// main:../style.less
+.contacts {
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+
+    @media @iPhone678 {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.contacts__map {
+    width: 50vh;
+
+    @media @iPad__pro {
+        width: 100%;
+    }
+
+}
+
+.contacts__name h2 {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-family: @montserrat;
+    text-align: center;
+    font-weight: 800;
+
+    @media @iPhone678 {
+        font-size: 3rem;
+    }
+
+}
+
+.contacts__flex {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @iPad__pro {
+        display: block;
+    }
+}
+
+.contacts__text {
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+    font-family: @montserrat;
+    font-size: 1.8rem;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+
+    @media @Surface {
+        font-size: 1.3rem;
+    }
+
+    @media @iPhone678 {
+        font-size: 1.1rem;
+    }
+
+    @media @iPhone5SE {
+        font-size: 0.8rem;
+    }
+}
+
+.contacts__text h3 {
+    margin-top: 3rem;
+    line-height: 1.5;
+}
+
+.social {
+    margin-top: 5rem;
+    display: inline-flex;
+}
+
+.social img {
+    height: 60px;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    transition: transform .2s linear, height .2s linear;
+
+    &:hover {
+        transform: translateY(-15px);
+        height: 80px;
+
+        @media @iPhone5SE {
+            height: 40px;
+        }
+    }
+}
